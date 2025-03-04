@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أدعية عشوائية</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- زر الإعدادات -->
+    <div class="settings-btn" onclick="toggleSettings()">⚙️</div>
+
+    <!-- قائمة الإعدادات -->
+    <div class="settings-panel">
+        <h3>🌟 اختر الثيم</h3>
+        <select id="theme-selector" onchange="changeTheme()">
+            <option value="default">🌿 أخضر فاتح</option>
+            <option value="dark">🌙 داكن</option>
+            <option value="blue">💙 أزرق</option>
+            <option value="purple">💜 بنفسجي</option>
+            <option value="pink">🌸 وردي</option>
+            <option value="gold">🌟 ذهبي</option>
+            <option value="red">❤️ أحمر</option>
+            <option value="gray">🩶 رمادي</option>
+            <option value="teal">🦚 تركواز</option>
+            <option value="brown">🤎 بني</option>
+        </select>
+    </div>
+
+    <div class="container">
+        <h1 class="fade-in">🌿 دعاء اليوم 🌿</h1>
+        <p id="dua" class="dua fade-in"></p>
+        <button onclick="getRandomDua()">📜 دعاء عشوائي</button>
+    </div>
+
+    <!-- ملاحظة صغيرة في الأسفل -->
+    <p class="footer"> لا تنسَ أن تدعو لصاحب الموقع 🤲</p>
+
+    <script src="script.js"></script>
+</body>
+</html>

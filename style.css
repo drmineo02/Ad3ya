@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
+
+body {
+    font-family: 'Amiri', serif;
+    text-align: center;
+    background: linear-gradient(to right, #009688, #004d40);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    transition: background 0.5s ease-in-out;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 500px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    transition: color 0.5s ease-in-out;
+}
+
+.dua {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #ffcc80;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #ffa726;
+}
+
+/* إعدادات */
+.settings-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.settings-btn:hover {
+    transform: rotate(90deg);
+}
+
+.settings-panel {
+    position: absolute;
+    top: 50px;
+    right: 15px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 8px;
+    display: none;
+}
+
+.settings-panel h3 {
+    color: white;
+    margin: 0 0 10px;
+}
+
+select {
+    width: 100%;
+    padding: 5px;
+}
+
+/* ملاحظة في الأسفل */
+.footer {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: 18px; /* تم تكبير الحجم */
+    font-weight: bold;
+    color: white;
+    opacity: 0.9;
+}
+
+/* تأثيرات عند الدخول */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
