@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://drmineo02.github.io/Ad3ya/sitemap.xml
